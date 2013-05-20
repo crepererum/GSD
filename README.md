@@ -5,8 +5,14 @@ This is a collection of scripts to get some (hight dimensional) data. You can us
 
 Of course you can just go to the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/) and download some data sets. But hand crafted data from sources you know are just better, because you got (really?) some knowledge about the structure and the meaning of the data.
 
+Requirements
+------------
+To run the script you need the tools described in each subReadme and the following generic stuff:
+ - Unix system (Linux tested, other systems may also work)
+ - Some standard tools
+ - Bash
+
 Usage
 -----
-
 Just browse through the directories to see how to get some data.
 

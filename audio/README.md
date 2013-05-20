@@ -12,5 +12,5 @@ Usage
 -----
 Just ensure that your system has enough free space and run:
 
-	$./process.sh output.txt path/to/*.mp3
+	./process.sh output.txt path/to/*.mp3
 
