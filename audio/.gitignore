@@ -1,4 +1,5 @@
 # audio data
+*.asd
 *.mp3
 *.ogg
 *.wav
