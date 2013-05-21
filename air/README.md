@@ -13,3 +13,5 @@ Download a data package from [EPA](http://www.epa.gov/ttn/airs/airsaqs/detaildat
 
 	./convert.py path/to/input.txt path/to/output.txt
 
+To encode the state and county IDs, use the [official encoding tables](http://www.itl.nist.gov/fipspubs/co-codes/states.txt).
+
