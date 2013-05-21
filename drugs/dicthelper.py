@@ -7,7 +7,10 @@ dir = sys.argv[1]
 all = set()
 
 for f in os.listdir(dir):
-	for l in open(dir + "/" + f).readlines():
+	tmp = open(dir + "/" + f)
+	lines = tmp.readlines()
+	tmp.close()
+	for l in lines:
 		all.add(l.strip())
 
 all = sorted(all)
