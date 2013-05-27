@@ -8,7 +8,7 @@ for iname in "${@:2:$length}"; do
 	bname=$(basename "$iname")
 	oname="$tmpdir/$bname.wav"
 	echo "Convert to wav: \"$iname\""
-	sox --norm "$iname" "$oname"
+	sox "$iname" --norm --rate 44100 "$oname"
 done;
 
 echo "Analyze..."
