@@ -4,3 +4,6 @@
 # data
 *.txt
 
+# backups
+*.backup
+
