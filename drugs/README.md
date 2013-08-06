@@ -14,5 +14,5 @@ Usage
 -----
 Just download some zip archives (use the updates!) from [dailymed](http://dailymed.nlm.nih.gov/dailymed/downloadLabels.cfm) and run the following command
 
-	./convert.sh path/to/zip/files/ output.txt
+	./convert.sh path/to/zip/files/ output.txt columnlist.txt
 

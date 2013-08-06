@@ -3,6 +3,7 @@
 # config
 input=$1
 output=$2
+header=$3
 datadir=$(mktemp -d)
 
 for f in $input/*.zip; do
@@ -22,7 +23,7 @@ for f in $input/*.zip; do
 done
 
 echo "Create index and write result..."
-./dicthelper.py $datadir > $output
+./dicthelper.py $datadir $output > $header
 
 rm -rf $datadir
 
