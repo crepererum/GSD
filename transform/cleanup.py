@@ -34,11 +34,16 @@ for line in args.input:
 
 # check for columns to remove
 remove = []
+print("Find columns that should be removed:")
+idx = 0
 for x in counts:
 	if x >= args.threshold * total:
+		print(idx)
 		remove.append(True)
 	else:
 		remove.append(False)
+	idx += 1
+print("done")
 
 # write output
 args.input.seek(0)
