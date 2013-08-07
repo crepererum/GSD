@@ -11,7 +11,7 @@ Usage
 -----
 Download a data package from [EPA](http://www.epa.gov/ttn/airs/airsaqs/detaildata/downloadaqsdata.htm), extract the txt file and run the following command:
 
-	./convert.py path/to/input.txt path/to/output.txt
+	./convert.py path/to/input.txt path/to/output.txt path/to/output.columnlist.txt
 
 To encode the state and county IDs, use the [official encoding tables](http://www.itl.nist.gov/fipspubs/co-codes/states.txt).
 
