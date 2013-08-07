@@ -5,6 +5,7 @@ import sys
 # parse args
 fnameIn = sys.argv[1]
 fnameOut = sys.argv[2]
+fnameColumns = sys.argv[3]
 
 # data structures
 skip = -2
@@ -14,9 +15,7 @@ timestamps = set()
 
 # read data
 fIn = open(fnameIn)
-lines = fIn.readlines()
-fIn.close()
-for l in lines:
+for l in fIn:
 	if skip < 0:
 		skip += 1
 	else:
@@ -29,7 +28,7 @@ for l in lines:
 				time = raw[11]
 				valueRaw = raw[12]
 
-				pos = state + county + site
+				pos = "%s.%s.%s" % (state, county, site)
 				positions.add(pos)
 
 				if len(valueRaw) > 0:
@@ -39,9 +38,18 @@ for l in lines:
 						map[timestamp] = {}
 					map[timestamp][pos] = valueRaw
 
+fIn.close()
+
 # prepare output
 positions = sorted(positions)
 timestamps = sorted(timestamps)
+
+# output column list
+columns = open(fnameColumns, "w")
+for pos in positions:
+	columns.write(pos)
+	columns.write("\n")
+columns.close()
 
 # output
 out = open(fnameOut, "w")
