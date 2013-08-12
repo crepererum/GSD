@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import argparse
-import sys
 
 # parse command line arguments
 parser = argparse.ArgumentParser(description="Removes lines by index")
